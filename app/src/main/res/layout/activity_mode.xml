@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ModeActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mode_IMG_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="40dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="choose your game:"
+            android:textStyle="bold"
+            android:textSize="40dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mode_BTN_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:text="Buttons mode"
+            android:textColor="#20243A"
+            android:textSize="20sp"
+            app:backgroundTint="#8BC3AA"
+            app:cornerRadius="120dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mode_BTN_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:paddingStart="30dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="20dp"
+            android:text="sensor mode"
+            android:textColor="#20243A"
+            android:textSize="20sp"
+            app:backgroundTint="#8BC3AA"
+            app:cornerRadius="120dp"
+
+            app:iconTint="#20243A" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

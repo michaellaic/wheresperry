@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.GameActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/game_IMG_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/backyard"
+
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/game_IMG_heart1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/perryheart" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/game_IMG_heart2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/perryheart" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/game_IMG_heart3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/perryheart" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/game_LBL_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/game_LBL_score_num"
+                android:padding="10dp"
+                android:text="Score:"
+                android:textSize="40dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/game_LBL_score_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="120"
+                android:textSize="40dp" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="2">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/doofenshmirz" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/doofenshmirz" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/doofenshmirz" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ferb" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/candace" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter16"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter17"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter18"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter19"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter20"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter21"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter22"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter23"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter24"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter25"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter26"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter27"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter28"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter29"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter30"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter31"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter32"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter33"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter34"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter35"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter36"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter37"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter38"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter39"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_Charcter40"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/phineas" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="2">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_perry1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/perry" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_perry2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/perry" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_perry3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/perry" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_perry4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/perry" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_IMG_perry5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/perry" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_BTN_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                app:icon="@drawable/arrow"
+                android:visibility="invisible"
+                app:iconSize="50dp"
+                app:iconTint="#1D451B" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_BTN_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="0dp"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                app:icon="@drawable/baseline_pause_24"
+                android:rotation="180"
+                app:iconSize="50dp"
+                app:iconTint="#1D451B" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_BTN_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="0dp"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                app:icon="@drawable/arrow"
+                android:rotation="180"
+                android:visibility="invisible"
+
+                app:iconSize="50dp"
+                app:iconTint="#1D451B" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

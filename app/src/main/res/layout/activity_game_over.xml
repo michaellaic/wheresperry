@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.GameOverActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/gameOver_IMG_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/gameover_LBL_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BUSTED"
+            android:textColor="#20243A"
+            android:textSize="70dp"
+            android:paddingTop="60dp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/gameover_LBL_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="enter your name:"
+            android:textColor="#20243A"
+            android:textSize="50dp" />
+
+        <EditText
+            android:id="@+id/gameover_EDT_name"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:ems="8"
+            android:textSize="70dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/gameover_BTN_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:text="enter"
+            android:textColor="#20243A"
+            android:textSize="30dp"
+            app:backgroundTint="#8BC3AA"
+            app:cornerRadius="120dp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
